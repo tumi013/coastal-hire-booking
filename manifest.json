@@ -1,0 +1,43 @@
+{
+    "name": "Coastal Hire Marketing Booking",
+    "short_name": "Coastal Hire",
+    "description": "Marketing materials booking system for Coastal Hire branches",
+    "start_url": "index.html",
+    "scope": ".",
+    "display": "standalone",
+    "display_override": ["standalone", "fullscreen", "minimal-ui"],
+    "orientation": "any",
+    "background_color": "#1a1d29",
+    "theme_color": "#e8672a",
+    "lang": "en",
+    "dir": "ltr",
+    "categories": ["business", "productivity"],
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "prefer_related_applications": false,
+    "related_applications": []
+}
