@@ -1,4 +1,4 @@
-var CACHE_NAME = 'coastal-hire-v5';
+var CACHE_NAME = 'coastal-hire-v7';
 var STATIC_ASSETS = [
     './',
     './index.html',
