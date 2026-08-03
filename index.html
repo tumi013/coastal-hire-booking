@@ -194,10 +194,10 @@
 
 <div class="loading-overlay" id="loadingOverlay"><div class="spinner"></div><p>Connecting to Coastal Hire...</p></div>
 
-<div id="loginScreen" class="hidden"><div class="login-screen"><div class="login-container"><div class="login-brand"><div id="logoArea"></div><h1>Coastal Hire</h1><p class="login-subtitle">Marketing Materials Booking System</p></div><form id="loginForm"><div class="form-group"><label id="lblBranch"><i class="fas fa-map-marker-alt"></i> Branch</label><select id="branchSelect" required><option value="" id="optSelectBranch">Select your branch...</option><option value="jeffreys_bay">Jeffreys Bay</option><option value="george">George</option><option value="port_elizabeth">Port Elizabeth</option><option value="witbank">Witbank</option><option value="middelburg">Middelburg</option><option value="ermelo">Ermelo</option><option value="lydenburg">Lydenburg</option><option value="groblersdal">Groblersdal</option><option value="nelspruit">Nelspruit (Head Office)</option></select></div><div class="form-group"><label id="lblPassword"><i class="fas fa-lock"></i> Password</label><div class="password-wrapper"><input type="password" id="loginPassword" placeholder="Enter password" required><button type="button" class="toggle-pw" id="togglePw"><i class="fas fa-eye"></i></button></div></div><div id="loginError" class="login-error hidden"><i class="fas fa-exclamation-circle"></i><span id="loginErrorMsg"></span></div><button type="submit" class="btn btn-primary btn-login" id="btnSignIn"><i class="fas fa-sign-in-alt"></i> Sign In</button></form><div class="login-footer"><button class="lang-toggle-btn" id="langToggleLogin">AF</button><button class="theme-toggle-btn" id="themeToggleLogin"><i class="fas fa-moon"></i></button><span>&copy; 2024</span></div></div></div></div>
+<div id="loginScreen" class="hidden"><div class="login-screen"><div class="login-container"><div class="login-brand"><div id="logoArea"></div><h1>Coastal Hire</h1><p class="login-subtitle">Marketing Materials Booking System</p></div><form id="loginForm"><div class="form-group"><label id="lblBranch"><i class="fas fa-map-marker-alt"></i> Branch</label><select id="branchSelect" required><option value="" id="optSelectBranch">Select your branch...</option><option value="jeffreys_bay">Jeffreys Bay</option><option value="george">George</option><option value="port_elizabeth">Port Elizabeth</option><option value="witbank">Witbank</option><option value="middelburg">Middelburg</option><option value="ermelo">Ermelo</option><option value="lydenburg">Lydenburg</option><option value="groblersdal">Groblersdal</option><option value="nelspruit">Nelspruit (Head Office)</option></select></div><div class="form-group"><label id="lblPassword"><i class="fas fa-lock"></i> Password</label><div class="password-wrapper"><input type="password" id="loginPassword" placeholder="Enter password" required><button type="button" class="toggle-pw" id="togglePw"><i class="fas fa-eye"></i></button></div></div><div id="loginError" class="login-error hidden"><i class="fas fa-exclamation-circle"></i><span id="loginErrorMsg"></span></div><button type="submit" class="btn btn-primary btn-login" id="btnSignIn"><i class="fas fa-sign-in-alt"></i> Sign In</button></form><div class="login-footer"><button class="notif-btn hidden" id="installBtnLogin" title="Install App" style="background:linear-gradient(135deg,var(--accent-primary),#c85520);color:white;border:none;box-shadow:0 2px 8px rgba(232,103,42,0.4)"><i class="fas fa-download"></i></button><button class="lang-toggle-btn" id="langToggleLogin">AF</button><button class="theme-toggle-btn" id="themeToggleLogin"><i class="fas fa-moon"></i></button><span>&copy; 2024</span></div></div></div></div>
 
 <div id="mainApp" class="main-app hidden"><div class="sidebar-overlay" id="sidebarOverlay"></div><aside class="sidebar" id="sidebar"><div class="sidebar-header"><div class="sidebar-logo" id="sidebarLogoArea"><i class="fas fa-hard-hat"></i><span>Coastal Hire</span></div><button class="sidebar-close" id="sidebarClose"><i class="fas fa-times"></i></button></div><nav class="sidebar-nav"><a class="nav-item active" data-page="dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-item" data-page="calendar"><i class="fas fa-calendar-alt"></i><span>Booking Calendar</span></a><a class="nav-item" data-page="new-booking"><i class="fas fa-plus-circle"></i><span>New Booking</span></a><a class="nav-item" data-page="my-bookings"><i class="fas fa-clipboard-list"></i><span>My Bookings</span></a><a class="nav-item" data-page="catalogue"><i class="fas fa-th-large"></i><span>Catalogue</span></a><a class="nav-item" data-page="social-media"><i class="fas fa-images"></i><span>Social Media</span></a><a class="nav-item" data-page="profile"><i class="fas fa-user-circle"></i><span>Profile</span></a><div id="adminNav" class="hidden"><div class="nav-divider"></div><div class="nav-section-label" id="lblAdmin">Admin</div><a class="nav-item" data-page="all-bookings"><i class="fas fa-list-alt"></i><span>All Bookings</span><span class="notif-dot hidden" id="pendingDot"></span></a><a class="nav-item" data-page="manage-materials"><i class="fas fa-boxes"></i><span>Materials</span></a><a class="nav-item" data-page="manage-social"><i class="fas fa-cloud-upload-alt"></i><span>Social Content</span></a><a class="nav-item" data-page="reports"><i class="fas fa-chart-bar"></i><span>Reports</span></a></div></nav><div class="sidebar-footer"><div class="sync-indicator online" id="syncStatus"><span class="sync-dot"></span> <span id="syncLabel">Firebase Connected</span></div><div class="branch-badge"><i class="fas fa-building"></i><span id="sidebarBranch"></span></div><button class="btn-logout" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Sign Out</button></div></aside>
-<main class="main-content"><header class="topbar"><div class="topbar-left"><button class="sidebar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button><h2 class="page-title" id="pageTitle">Dashboard</h2></div><div class="topbar-right"><button class="lang-toggle-btn" id="langToggleApp">AF</button><button class="notif-btn" id="notifBtn"><i class="fas fa-bell"></i><span class="notif-count hidden" id="notifCount">0</span></button><button class="theme-toggle-btn" id="themeToggleApp"><i class="fas fa-moon"></i></button><div class="user-info"><div class="user-avatar" id="userAvatar">CH</div><span class="user-name" id="topbarBranch"></span></div></div></header>
+<main class="main-content"><header class="topbar"><div class="topbar-left"><button class="sidebar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button><h2 class="page-title" id="pageTitle">Dashboard</h2></div><div class="topbar-right"><button class="notif-btn hidden" id="installBtn" title="Install App" style="background:linear-gradient(135deg,var(--accent-primary),#c85520);color:white;border:none;box-shadow:0 2px 8px rgba(232,103,42,0.4)"><i class="fas fa-download"></i></button><button class="lang-toggle-btn" id="langToggleApp">AF</button><button class="notif-btn" id="notifBtn"><i class="fas fa-bell"></i><span class="notif-count hidden" id="notifCount">0</span></button><button class="theme-toggle-btn" id="themeToggleApp"><i class="fas fa-moon"></i></button><div class="user-info"><div class="user-avatar" id="userAvatar">CH</div><span class="user-name" id="topbarBranch"></span></div></div></header>
 <div class="page-content" id="pageContent">
 
 <div id="page-dashboard" class="page active"><div class="welcome-card"><h2 id="welcomeMsg"></h2><p id="welcomeSub"></p><button class="wc-btn" id="wcNewBtn" onclick="navigateTo('new-booking')"><i class="fas fa-plus"></i> New Booking</button></div><div class="stats-grid"><div class="stat-card stat-primary"><div class="stat-icon"><i class="fas fa-clock"></i></div><div class="stat-info-val"><h3 id="sPending">0</h3><p id="lblStatPending">Pending</p></div></div><div class="stat-card stat-success"><div class="stat-icon"><i class="fas fa-check-circle"></i></div><div class="stat-info-val"><h3 id="sApproved">0</h3><p id="lblStatApproved">Approved</p></div></div><div class="stat-card stat-warning"><div class="stat-icon"><i class="fas fa-truck"></i></div><div class="stat-info-val"><h3 id="sDispatched">0</h3><p id="lblStatDispatched">Dispatched</p></div></div><div class="stat-card stat-info"><div class="stat-icon"><i class="fas fa-history"></i></div><div class="stat-info-val"><h3 id="sTotal">0</h3><p id="lblStatTotal">Total</p></div></div></div>
@@ -785,6 +785,67 @@ document.addEventListener('DOMContentLoaded',function(){
     document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
 });
 
+// PWA Install Prompt
+var deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', function(e) {
+    e.preventDefault();
+    deferredPrompt = e;
+    console.log('Install prompt captured!');
+
+    // Show install buttons
+    var btn1 = document.getElementById('installBtn');
+    var btn2 = document.getElementById('installBtnLogin');
+
+    if (btn1) {
+        btn1.classList.remove('hidden');
+        btn1.onclick = triggerInstall;
+    }
+    if (btn2) {
+        btn2.classList.remove('hidden');
+        btn2.onclick = triggerInstall;
+    }
+});
+
+function triggerInstall() {
+    if (!deferredPrompt) {
+        toast('App is already installed or install not available', 'info');
+        return;
+    }
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(function(choice) {
+        if (choice.outcome === 'accepted') {
+            toast('App installed successfully!', 'success');
+        } else {
+            toast('Install cancelled', 'info');
+        }
+        deferredPrompt = null;
+        var btn1 = document.getElementById('installBtn');
+        var btn2 = document.getElementById('installBtnLogin');
+        if (btn1) btn1.classList.add('hidden');
+        if (btn2) btn2.classList.add('hidden');
+    });
+}
+
+window.addEventListener('appinstalled', function() {
+    toast('Coastal Hire installed!', 'success');
+    var btn1 = document.getElementById('installBtn');
+    var btn2 = document.getElementById('installBtnLogin');
+    if (btn1) btn1.classList.add('hidden');
+    if (btn2) btn2.classList.add('hidden');
+});
+
+// Detect if running as installed app
+if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) {
+    console.log('Running as installed PWA - hiding install buttons');
+    setTimeout(function() {
+        var btn1 = document.getElementById('installBtn');
+        var btn2 = document.getElementById('installBtnLogin');
+        if (btn1) btn1.classList.add('hidden');
+        if (btn2) btn2.classList.add('hidden');
+    }, 500);
+}
+    
 if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(reg){reg.unregister()})});setTimeout(function(){navigator.serviceWorker.register('sw.js').then(function(reg){console.log('SW:',reg.scope)}).catch(function(err){console.log('SW err:',err)})},1000)})}
 </script>
 </body>
