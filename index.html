@@ -19,12 +19,11 @@
     <style>
         :root,[data-theme="light"]{--bg-primary:#f0f2f5;--bg-secondary:#ffffff;--bg-tertiary:#f8f9fa;--bg-sidebar:#1a1d29;--bg-sidebar-hover:#252836;--bg-sidebar-active:#2d3142;--text-primary:#1a1d29;--text-secondary:#5a5f7a;--text-tertiary:#8e92a4;--text-sidebar:#b8bcc8;--text-sidebar-active:#ffffff;--border-color:#e2e5ec;--border-light:#f0f1f5;--accent-primary:#e8672a;--accent-primary-light:rgba(232,103,42,0.1);--accent-success:#10b981;--accent-success-light:rgba(16,185,129,0.1);--accent-warning:#f59e0b;--accent-warning-light:rgba(245,158,11,0.1);--accent-danger:#ef4444;--accent-danger-light:rgba(239,68,68,0.1);--accent-info:#6366f1;--accent-info-light:rgba(99,102,241,0.1);--shadow-sm:0 1px 2px rgba(0,0,0,0.05);--shadow-md:0 4px 6px rgba(0,0,0,0.07);--shadow-lg:0 10px 25px rgba(0,0,0,0.1);--shadow-xl:0 20px 40px rgba(0,0,0,0.12);--radius-sm:6px;--radius-md:10px;--radius-lg:14px;--radius-xl:20px;--transition:0.2s ease;--transition-slow:0.3s ease;--sidebar-width:260px;--topbar-height:65px}
         [data-theme="dark"]{--bg-primary:#0f1117;--bg-secondary:#1a1d29;--bg-tertiary:#21242f;--bg-sidebar:#0d0f18;--bg-sidebar-hover:#1a1d29;--bg-sidebar-active:#21242f;--text-primary:#e8eaed;--text-secondary:#9aa0b4;--text-tertiary:#6b7185;--text-sidebar:#7a7f94;--text-sidebar-active:#ffffff;--border-color:#2a2d3a;--border-light:#1e2130;--shadow-sm:0 1px 2px rgba(0,0,0,0.2);--shadow-md:0 4px 6px rgba(0,0,0,0.3);--shadow-lg:0 10px 25px rgba(0,0,0,0.4);--shadow-xl:0 20px 40px rgba(0,0,0,0.5)}
-        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-        html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;height:100%;width:100%;overflow-x:hidden}
-        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;overflow-x:hidden;min-height:100vh;min-height:100dvh;width:100%;max-width:100vw;position:relative;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
-        input,select,textarea,button{font-size:16px;max-width:100%}
-        @media(max-width:768px){input,select,textarea{font-size:16px !important}}
-        a{text-decoration:none;color:inherit}button{cursor:pointer;border:none;background:none;font-family:inherit}input,select,textarea{font-family:inherit;font-size:.9rem}.hidden{display:none!important}
+       *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;height:100%;width:100%;overflow-x:hidden}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;overflow-x:hidden;min-height:100vh;min-height:100dvh;width:100%;max-width:100vw;position:relative;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+input,select,textarea,button{font-size:16px;max-width:100%}
+@media(max-width:768px){input,select,textarea{font-size:16px !important}}a{text-decoration:none;color:inherit}button{cursor:pointer;border:none;background:none;font-family:inherit}input,select,textarea{font-family:inherit;font-size:.9rem}.hidden{display:none!important}
         .login-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0d0f18 0%,#1a1d29 40%,#2d1f0e 100%);padding:20px;position:relative;overflow:hidden}.login-screen::before{content:'';position:absolute;top:-20%;right:-20%;width:60%;height:60%;background:radial-gradient(circle,rgba(232,103,42,0.2) 0%,transparent 70%);animation:pg 4s ease-in-out infinite}@keyframes pg{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
         .login-container{background:var(--bg-secondary);border-radius:var(--radius-xl);padding:48px;width:100%;max-width:440px;box-shadow:var(--shadow-xl);position:relative;z-index:1;border:1px solid var(--border-color);animation:su .5s ease}@keyframes su{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
         .login-brand{text-align:center;margin-bottom:36px}.logo-img-wrap{width:120px;height:120px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center}.logo-img-wrap img{max-width:100%;max-height:100%;object-fit:contain;border-radius:var(--radius-md)}.logo-upload-zone{width:120px;height:120px;margin:0 auto 16px;border:2px dashed var(--border-color);border-radius:var(--radius-lg);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition);color:var(--text-tertiary);font-size:.7rem;gap:4px}.logo-upload-zone:hover{border-color:var(--accent-primary);background:var(--accent-primary-light)}.logo-upload-zone i{font-size:1.5rem;color:var(--accent-primary)}
@@ -36,16 +35,13 @@
         .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 20px;border-radius:var(--radius-md);font-size:.88rem;font-weight:600;transition:var(--transition);border:none;cursor:pointer}.btn-sm{padding:7px 13px;font-size:.8rem}.btn-primary{background:linear-gradient(135deg,var(--accent-primary),#c85520);color:white;box-shadow:0 4px 12px rgba(232,103,42,0.3)}.btn-primary:hover{transform:translateY(-1px)}.btn-secondary{background:var(--bg-tertiary);color:var(--text-secondary);border:1px solid var(--border-color)}.btn-secondary:hover{background:var(--border-color)}.btn-success{background:var(--accent-success);color:white}.btn-danger{background:var(--accent-danger);color:white}.btn-info{background:var(--accent-info);color:white}
         .btn-login{width:100%;padding:14px;font-size:1rem;margin-top:8px}.btn-logout{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;background:rgba(239,68,68,0.1);color:var(--accent-danger);border-radius:var(--radius-md);font-size:.85rem;font-weight:600}.btn-back{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:var(--radius-md);background:var(--bg-tertiary);color:var(--text-secondary);border:1px solid var(--border-color);font-size:.84rem;font-weight:600;cursor:pointer;transition:var(--transition);margin-bottom:18px}.btn-back:hover{color:var(--accent-primary);border-color:var(--accent-primary)}
         .theme-toggle-btn,.lang-toggle-btn{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--text-secondary);background:var(--bg-tertiary);border:1px solid var(--border-color);transition:var(--transition);font-size:1rem}.theme-toggle-btn:hover,.lang-toggle-btn:hover{color:var(--accent-primary);border-color:var(--accent-primary)}.lang-toggle-btn{font-size:.72rem;font-weight:800}.lang-toggle-btn.active{background:var(--accent-primary-light);color:var(--accent-primary);border-color:var(--accent-primary)}
-        .main-app{display:flex;min-height:100vh;min-height:100dvh;width:100vw;max-width:100%;overflow-x:hidden;overflow-y:visible}
-        .sidebar{width:var(--sidebar-width);background:var(--bg-sidebar);height:100vh;position:fixed;left:0;top:0;z-index:100;display:flex;flex-direction:column;transition:var(--transition-slow);border-right:1px solid rgba(255,255,255,0.04);overflow:hidden}.sidebar-header{padding:20px 20px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.05);flex-shrink:0}.sidebar-logo{display:flex;align-items:center;gap:12px;color:white;font-weight:700;font-size:1.1rem}.sidebar-logo i{color:var(--accent-primary);font-size:1.4rem}.sidebar-logo img{width:28px;height:28px;border-radius:4px;object-fit:contain}.sidebar-close{color:var(--text-sidebar);font-size:1.1rem;display:none}.sidebar-close:hover{color:white}
+        .main-app{display:flex;min-height:100vh;min-height:100dvh;width:100vw;max-width:100%;overflow-x:hidden}.sidebar{width:var(--sidebar-width);background:var(--bg-sidebar);height:100vh;position:fixed;left:0;top:0;z-index:100;display:flex;flex-direction:column;transition:var(--transition-slow);border-right:1px solid rgba(255,255,255,0.04);overflow:hidden}.sidebar-header{padding:20px 20px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.05);flex-shrink:0}.sidebar-logo{display:flex;align-items:center;gap:12px;color:white;font-weight:700;font-size:1.1rem}.sidebar-logo i{color:var(--accent-primary);font-size:1.4rem}.sidebar-logo img{width:28px;height:28px;border-radius:4px;object-fit:contain}.sidebar-close{color:var(--text-sidebar);font-size:1.1rem;display:none}.sidebar-close:hover{color:white}
         .sidebar-nav{flex:1;padding:14px 10px;overflow-y:auto}.nav-item{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:var(--radius-md);color:var(--text-sidebar);font-size:.875rem;font-weight:500;transition:var(--transition);margin-bottom:2px;cursor:pointer}.nav-item:hover{background:var(--bg-sidebar-hover);color:white}.nav-item.active{background:var(--bg-sidebar-active);color:var(--text-sidebar-active)}.nav-item.active i{color:var(--accent-primary)}.nav-item i{width:18px;text-align:center;font-size:.9rem;flex-shrink:0}
         .nav-divider{margin:10px 0;padding-top:10px;border-top:1px solid rgba(255,255,255,0.05)}.nav-section-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--text-sidebar);padding:0 14px;margin-bottom:6px;opacity:.45}
         .sidebar-footer{padding:14px 14px 18px;border-top:1px solid rgba(255,255,255,0.05);flex-shrink:0}.branch-badge{display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(232,103,42,0.1);border-radius:var(--radius-md);color:var(--accent-primary);font-size:.8rem;font-weight:600;margin-bottom:10px}
         .sync-indicator{display:flex;align-items:center;gap:6px;font-size:.72rem;font-weight:600;padding:0 14px;margin-bottom:6px}.sync-indicator.online{color:var(--accent-success)}.sync-indicator.offline{color:var(--accent-danger)}.sync-dot{width:8px;height:8px;border-radius:50%;animation:sp 2s infinite}.sync-indicator.online .sync-dot{background:var(--accent-success)}.sync-indicator.offline .sync-dot{background:var(--accent-danger)}@keyframes sp{0%,100%{opacity:1}50%{opacity:.4}}
-        .main-content{flex:1;margin-left:var(--sidebar-width);min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;width:calc(100% - var(--sidebar-width));max-width:100%;overflow-x:hidden;overflow-y:visible}
-        .topbar{height:var(--topbar-height);background:var(--bg-secondary);border-bottom:1px solid var(--border-color);display:flex;align-items:center;justify-content:space-between;padding:0 24px;position:sticky;top:0;z-index:95;box-shadow:var(--shadow-sm);flex-shrink:0;width:100%;max-width:100vw};border-bottom:1px solid var(--border-color);display:flex;align-items:center;justify-content:space-between;padding:0 24px;position:sticky;top:0;z-index:50;box-shadow:var(--shadow-sm);flex-shrink:0;width:100%;max-width:100vw;padding-top:env(safe-area-inset-top)}
-        .topbar-left{display:flex;align-items:center;gap:14px}.sidebar-toggle{font-size:1.2rem;color:var(--text-secondary);display:none}.page-title{font-size:1.15rem;font-weight:700}.topbar-right{display:flex;align-items:center;gap:10px}.user-info{display:flex;align-items:center;gap:10px}.user-avatar{width:36px;height:36px;background:linear-gradient(135deg,var(--accent-primary),#f59e0b);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:white;font-size:.72rem;font-weight:800}.user-name{font-weight:600;font-size:.88rem}
-        .page-content{padding:24px;flex:1;overflow-y:visible}.card{background:var(--bg-secondary);border-radius:var(--radius-lg);border:1px solid var(--border-color);box-shadow:var(--shadow-sm);overflow:hidden;margin-bottom:24px}.card:last-child{margin-bottom:0}.card-header{padding:18px 22px;border-bottom:1px solid var(--border-color);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}.card-header h3{font-size:.97rem;font-weight:700;display:flex;align-items:center;gap:10px}.card-header h3 i{color:var(--accent-primary)}.card-body{padding:22px}.card-link{font-size:.83rem;color:var(--accent-primary);font-weight:600;cursor:pointer}.header-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+        .main-content{flex:1;margin-left:var(--sidebar-width);min-height:100vh;display:flex;flex-direction:column}.topbar{height:var(--topbar-height);background:var(--bg-secondary);border-bottom:1px solid var(--border-color);display:flex;align-items:center;justify-content:space-between;padding:0 24px;position:sticky;top:0;z-index:50;box-shadow:var(--shadow-sm);flex-shrink:0;width:100%;max-width:100vw;padding-top:env(safe-area-inset-top)}.topbar-left{display:flex;align-items:center;gap:14px}.sidebar-toggle{font-size:1.2rem;color:var(--text-secondary);display:none}.page-title{font-size:1.15rem;font-weight:700}.topbar-right{display:flex;align-items:center;gap:10px}.user-info{display:flex;align-items:center;gap:10px}.user-avatar{width:36px;height:36px;background:linear-gradient(135deg,var(--accent-primary),#f59e0b);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:white;font-size:.72rem;font-weight:800}.user-name{font-weight:600;font-size:.88rem}
+        .page-content{padding:24px;flex:1;overflow-y:auto}.card{background:var(--bg-secondary);border-radius:var(--radius-lg);border:1px solid var(--border-color);box-shadow:var(--shadow-sm);overflow:hidden;margin-bottom:24px}.card:last-child{margin-bottom:0}.card-header{padding:18px 22px;border-bottom:1px solid var(--border-color);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}.card-header h3{font-size:.97rem;font-weight:700;display:flex;align-items:center;gap:10px}.card-header h3 i{color:var(--accent-primary)}.card-body{padding:22px}.card-link{font-size:.83rem;color:var(--accent-primary);font-weight:600;cursor:pointer}.header-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
         .page{display:none}.page.active{display:block}.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-bottom:24px}.stat-card{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:var(--radius-lg);padding:22px;display:flex;align-items:center;gap:16px;box-shadow:var(--shadow-sm);transition:var(--transition)}.stat-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}.stat-icon{width:50px;height:50px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0}.stat-primary .stat-icon{background:var(--accent-primary-light);color:var(--accent-primary)}.stat-success .stat-icon{background:var(--accent-success-light);color:var(--accent-success)}.stat-warning .stat-icon{background:var(--accent-warning-light);color:var(--accent-warning)}.stat-info .stat-icon{background:var(--accent-info-light);color:var(--accent-info)}.stat-info-val h3{font-size:1.6rem;font-weight:800;line-height:1}.stat-info-val p{font-size:.8rem;color:var(--text-tertiary);font-weight:500;margin-top:4px}
         .two-col{display:grid;grid-template-columns:1.4fr 1fr;gap:22px}.booking-list{display:flex;flex-direction:column;gap:8px}.booking-item{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:var(--bg-tertiary);border-radius:var(--radius-md);cursor:pointer;border:1px solid transparent;transition:var(--transition)}.booking-item:hover{border-color:var(--accent-primary);transform:translateX(3px)}.booking-item-left{display:flex;flex-direction:column;gap:2px}.booking-id{font-size:.78rem;font-weight:700;color:var(--accent-primary)}.booking-desc{font-size:.83rem;color:var(--text-secondary)}.booking-date{font-size:.72rem;color:var(--text-tertiary)}
         .badge{padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.4px;white-space:nowrap}.badge-pending{background:var(--accent-warning-light);color:var(--accent-warning)}.badge-approved{background:var(--accent-success-light);color:var(--accent-success)}.badge-dispatched{background:var(--accent-info-light);color:var(--accent-info)}.badge-delivered{background:rgba(5,150,105,0.12);color:#059669}.badge-cancelled{background:var(--accent-danger-light);color:var(--accent-danger)}
@@ -141,73 +137,24 @@
         .quick-actions{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}.quick-btn{display:flex;flex-direction:column;align-items:center;gap:9px;padding:18px 12px;background:var(--bg-tertiary);border:1px solid var(--border-color);border-radius:var(--radius-md);cursor:pointer;transition:var(--transition);color:var(--text-secondary);font-size:.8rem;font-weight:600}.quick-btn i{font-size:1.3rem;color:var(--accent-primary)}.quick-btn:hover{border-color:var(--accent-primary);background:var(--accent-primary-light);color:var(--accent-primary);transform:translateY(-2px)}
         .notif-btn{position:relative;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--bg-tertiary);border:1px solid var(--border-color);color:var(--text-secondary);font-size:1rem}.notif-btn:hover{color:var(--accent-primary);border-color:var(--accent-primary)}.notif-count{position:absolute;top:-3px;right:-3px;width:18px;height:18px;background:var(--accent-danger);border-radius:50%;font-size:.6rem;font-weight:800;color:white;display:flex;align-items:center;justify-content:center;border:2px solid var(--bg-secondary)}.notif-dot{width:8px;height:8px;background:var(--accent-primary);border-radius:50%;margin-left:auto;flex-shrink:0}
         .profile-header{display:flex;align-items:center;gap:20px;padding:22px;background:var(--bg-tertiary);border-radius:var(--radius-md);margin-bottom:18px}.profile-avatar{width:70px;height:70px;background:linear-gradient(135deg,var(--accent-primary),#f59e0b);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:800;color:white;flex-shrink:0}.profile-info h3{font-size:1.1rem;font-weight:800}.profile-info p{font-size:.83rem;color:var(--text-tertiary);margin-top:2px}.profile-badge{margin-top:6px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;background:var(--accent-primary-light);color:var(--accent-primary);border-radius:20px;font-size:.72rem;font-weight:700}
-        .sidebar-overlay{display:none;position:fixed;inset:0;z-index:99;background:rgba(0,0,0,0.4)}.sidebar-overlay.show{display:block}.chat-card{display:flex;flex-direction:column;height:calc(100vh - 180px);max-height:700px}
-.chat-messages{flex:1;overflow-y:auto;padding:20px;display:flex;flex-direction:column;gap:12px;background:var(--bg-primary)}
-.chat-msg{max-width:75%;padding:10px 14px;border-radius:16px;font-size:.88rem;line-height:1.4;word-wrap:break-word;position:relative;animation:msgIn .3s ease}
-@keyframes msgIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-.chat-msg.own{align-self:flex-end;background:linear-gradient(135deg,var(--accent-primary),#c85520);color:white;border-bottom-right-radius:4px}
-.chat-msg.other{align-self:flex-start;background:var(--bg-secondary);color:var(--text-primary);border:1px solid var(--border-color);border-bottom-left-radius:4px}
-.chat-msg-sender{font-size:.72rem;font-weight:700;margin-bottom:4px;color:var(--accent-primary)}
-.chat-msg.own .chat-msg-sender{color:rgba(255,255,255,0.9)}
-.chat-msg-time{font-size:.65rem;opacity:.7;margin-top:4px;text-align:right}
-.chat-msg-text{white-space:pre-wrap;word-break:break-word}
-.chat-input-area{display:flex;gap:10px;padding:14px;border-top:1px solid var(--border-color);background:var(--bg-secondary);align-items:flex-end}
-.chat-input-area textarea{flex:1;padding:10px 14px;border:2px solid var(--border-color);border-radius:20px;background:var(--bg-tertiary);color:var(--text-primary);font-size:.9rem;outline:none;resize:none;max-height:120px;min-height:40px;font-family:inherit;line-height:1.4}
-.chat-input-area textarea:focus{border-color:var(--accent-primary)}
-.chat-send-btn{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent-primary),#c85520);color:white;border:none;display:flex;align-items:center;justify-content:center;font-size:1rem;cursor:pointer;transition:var(--transition);flex-shrink:0;box-shadow:0 2px 8px rgba(232,103,42,0.3)}
-.chat-send-btn:hover{transform:scale(1.1)}
-.chat-send-btn:active{transform:scale(0.95)}
-.chat-empty{text-align:center;padding:44px 20px;color:var(--text-tertiary)}
-.chat-empty i{font-size:3rem;margin-bottom:12px;opacity:.35;display:block}
-.chat-date-divider{text-align:center;font-size:.7rem;color:var(--text-tertiary);font-weight:600;margin:12px 0;padding:4px 12px;background:var(--bg-tertiary);border-radius:20px;align-self:center;box-shadow:var(--shadow-sm)}
-.online-indicator{display:flex;align-items:center;gap:6px;font-size:.75rem;color:var(--accent-success);font-weight:600}
-.online-dot{width:8px;height:8px;background:var(--accent-success);border-radius:50%;animation:sp 2s infinite}
-@media(max-width:768px){.chat-card{height:calc(100vh - 200px)}.chat-msg{max-width:85%}}
-        .bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,var(--accent-primary) 0%,#c85520 50%,#9b3e10 100%);border-top:none;box-shadow:none;z-index:90;padding:10px 0 calc(10px + env(safe-area-inset-bottom));justify-content:space-around;align-items:center}
-.bottom-nav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:6px 4px;background:none;border:none;color:rgba(255,255,255,0.85);font-size:.68rem;font-weight:700;cursor:pointer;transition:all .3s cubic-bezier(0.34,1.56,0.64,1);min-width:56px;border-radius:var(--radius-md);position:relative;flex:1}
-.bottom-nav-item i{font-size:1.4rem;color:white;transition:all .3s cubic-bezier(0.34,1.56,0.64,1);filter:drop-shadow(0 2px 4px rgba(0,0,0,0.2))}
-.bottom-nav-item:hover i{transform:scale(1.15) translateY(-3px)}
-.bottom-nav-item.active{color:white}
-.bottom-nav-item.active i{transform:scale(1.25) translateY(-4px);filter:drop-shadow(0 4px 10px rgba(0,0,0,0.4))}
-.bottom-nav-item.active::before{content:'';position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:40px;height:4px;background:white;border-radius:0 0 6px 6px;box-shadow:0 2px 8px rgba(255,255,255,0.5)}
-.bottom-nav-item.active::after{content:'';position:absolute;bottom:2px;left:50%;transform:translateX(-50%);width:6px;height:6px;background:white;border-radius:50%;box-shadow:0 0 10px rgba(255,255,255,0.8)}
+        .sidebar-overlay{display:none;position:fixed;inset:0;z-index:99;background:rgba(0,0,0,0.4)}.sidebar-overlay.show{display:block}
         .loading-overlay{position:fixed;inset:0;background:var(--bg-primary);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;gap:16px}.loading-overlay .spinner{width:40px;height:40px;border:4px solid var(--border-color);border-top-color:var(--accent-primary);border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.loading-overlay p{color:var(--text-tertiary);font-size:.9rem}
-        @media(max-width:1024px){.two-col{grid-template-columns:1fr}}
-        @media(max-width:768px){
-            .sidebar{transform:translateX(-100%);width:min(280px,85vw)}
-            .sidebar.open{transform:translateX(0);box-shadow:var(--shadow-xl)}
-            .sidebar-close{display:block}
-            .sidebar-toggle{display:block;font-size:1.1rem}
-            .main-content{margin-left:0;width:100%;max-width:100vw}
-            .topbar{padding:0 10px;width:100%;gap:6px;position:sticky;top:0;z-index:80}
-            .topbar-left{gap:8px}
-            .topbar-right{gap:5px}
-            .page-title{font-size:1rem}
-            .theme-toggle-btn,.lang-toggle-btn,.notif-btn{width:32px;height:32px;font-size:.85rem}
-            .lang-toggle-btn{font-size:.65rem}
-            .user-avatar{width:30px;height:30px;font-size:.65rem}
-            .notif-count{width:14px;height:14px;font-size:.55rem;top:-2px;right:-2px}
-            .page-content{padding:14px;padding-bottom:90px;width:100%;max-width:100vw;overflow-x:hidden}
-            .bottom-nav{display:flex}
-            .stats-grid{grid-template-columns:repeat(2,1fr)}
-            .form-row{grid-template-columns:1fr}
-            .user-name{display:none}
-            .form-actions{flex-direction:column}
-            .form-actions .btn{width:100%;justify-content:center}
-            .cal-day{min-height:60px;padding:4px 2px}
-            .cal-booking-chip{display:none}
-            .cal-day-num{font-size:.72rem}
-            .cal-mini-dot{width:6px;height:6px}
-        }
-        @media(max-width:480px){
-            .stats-grid{grid-template-columns:1fr}
-            .cat-grid,.sm-grid{grid-template-columns:1fr}
-            .topbar{padding:0 8px;gap:4px}
-            .topbar-right{gap:4px}
-            .theme-toggle-btn,.lang-toggle-btn,.notif-btn{width:30px;height:30px;font-size:.8rem}
-            .user-avatar{width:28px;height:28px;font-size:.6rem}
-            .page-title{font-size:.9rem}
-        }
+       @media(max-width:1024px){.two-col{grid-template-columns:1fr}}
+@media(max-width:768px){
+    .sidebar{transform:translateX(-100%);width:min(280px,85vw)}
+    .sidebar.open{transform:translateX(0);box-shadow:var(--shadow-xl)}
+    .sidebar-close{display:block}
+    .sidebar-toggle{display:block;font-size:1.1rem}
+    .main-content{margin-left:0;width:100%;max-width:100vw}
+    .topbar{padding:0 10px;width:100%;gap:6px}
+    .topbar-left{gap:8px}
+    .topbar-right{gap:5px}
+    .page-title{font-size:1rem}
+    .theme-toggle-btn,.lang-toggle-btn,.notif-btn{width:32px;height:32px;font-size:.85rem}
+    .lang-toggle-btn{font-size:.65rem}
+    .user-avatar{width:30px;height:30px;font-size:.65rem}
+    .notif-count{width:14px;height:14px;font-size:.55rem;top:-2px;right:-2px}
+    .page-content{padding:14px;width:100%;max-width:100vw;overflow-x:hidden}.login-container{padding:30px 22px}.stats-grid{grid-template-columns:repeat(2,1fr)}.form-row{grid-template-columns:1fr}.user-name{display:none}.form-actions{flex-direction:column}.form-actions .btn{width:100%;justify-content:center}.cal-day{min-height:60px;padding:4px 2px}.cal-booking-chip{display:none}.cal-day-num{font-size:.72rem}.cal-mini-dot{width:6px;height:6px}}@media(max-width:480px){.stats-grid{grid-template-columns:1fr}.cat-grid,.sm-grid{grid-template-columns:1fr}}
         ::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:var(--bg-primary)}::-webkit-scrollbar-thumb{background:var(--border-color);border-radius:10px}
     </style>
 </head>
@@ -215,10 +162,13 @@
 
 <div class="loading-overlay" id="loadingOverlay"><div class="spinner"></div><p>Connecting to Coastal Hire...</p></div>
 
-<div id="loginScreen" class="hidden"><div class="login-screen"><div class="login-container"><div class="login-brand"><div id="logoArea"></div><h1>Coastal Hire</h1><p class="login-subtitle">Marketing Materials Booking System</p></div><form id="loginForm"><div class="form-group"><label id="lblBranch"><i class="fas fa-map-marker-alt"></i> Branch</label><select id="branchSelect" required><option value="" id="optSelectBranch">Select your branch...</option><option value="jeffreys_bay">Jeffreys Bay</option><option value="george">George</option><option value="port_elizabeth">Port Elizabeth</option><option value="witbank">Witbank</option><option value="middelburg">Middelburg</option><option value="ermelo">Ermelo</option><option value="lydenburg">Lydenburg</option><option value="groblersdal">Groblersdal</option><option value="nelspruit">Nelspruit (Head Office)</option></select></div><div class="form-group"><label id="lblPassword"><i class="fas fa-lock"></i> Password</label><div class="password-wrapper"><input type="password" id="loginPassword" placeholder="Enter password" required><button type="button" class="toggle-pw" id="togglePw"><i class="fas fa-eye"></i></button></div></div><div id="loginError" class="login-error hidden"><i class="fas fa-exclamation-circle"></i><span id="loginErrorMsg"></span></div><button type="submit" class="btn btn-primary btn-login" id="btnSignIn"><i class="fas fa-sign-in-alt"></i> Sign In</button></form><div class="login-footer"><button class="notif-btn hidden" id="installBtnLogin" title="Install App" style="background:linear-gradient(135deg,var(--accent-primary),#c85520);color:white;border:none;box-shadow:0 2px 8px rgba(232,103,42,0.4)"><i class="fas fa-download"></i></button><button class="lang-toggle-btn" id="langToggleLogin">AF</button><button class="theme-toggle-btn" id="themeToggleLogin"><i class="fas fa-moon"></i></button><span>&copy; 2024</span></div></div></div></div>
+<div id="loginScreen" class="hidden"><div class="login-screen"><div class="login-container"><div class="login-brand"><div id="logoArea"></div><h1>Coastal Hire</h1><p class="login-subtitle">Marketing Materials Booking System</p></div><form id="loginForm"><div class="form-group"><label id="lblBranch"><i class="fas fa-map-marker-alt"></i> Branch</label><select id="branchSelect" required><option value="" id="optSelectBranch">Select your branch...</option><option value="jeffreys_bay">Jeffreys Bay</option><option value="george">George</option><option value="port_elizabeth">Port Elizabeth</option><option value="witbank">Witbank</option><option value="middelburg">Middelburg</option><option value="ermelo">Ermelo</option><option value="lydenburg">Lydenburg</option><option value="groblersdal">Groblersdal</option><option value="nelspruit">Nelspruit (Head Office)</option></select></div><div class="form-group"><label id="lblPassword"><i class="fas fa-lock"></i> Password</label><div class="password-wrapper"><input type="password" id="loginPassword" placeholder="Enter password" required><button type="button" class="toggle-pw" id="togglePw"><i class="fas fa-eye"></i></button></div></div><div id="loginError" class="login-error hidden"><i class="fas fa-exclamation-circle"></i><span id="loginErrorMsg"></span></div><button type="submit" class="btn btn-primary btn-login" id="btnSignIn"><i class="fas fa-sign-in-alt"></i> Sign In</button></form><div class="login-footer"><button class="lang-toggle-btn" id="langToggleLogin">AF</button><button class="theme-toggle-btn" id="themeToggleLogin"><i class="fas fa-moon"></i></button><span>&copy; 2024</span></div></div></div></div>
 
-<div id="mainApp" class="main-app hidden"><div class="sidebar-overlay" id="sidebarOverlay"></div><aside class="sidebar" id="sidebar"><div class="sidebar-header"><div class="sidebar-logo" id="sidebarLogoArea"><i class="fas fa-hard-hat"></i><span>Coastal Hire</span></div><button class="sidebar-close" id="sidebarClose"><i class="fas fa-times"></i></button></div><nav class="sidebar-nav"><a class="nav-item active" data-page="dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-item" data-page="calendar"><i class="fas fa-calendar-alt"></i><span>Booking Calendar</span></a><a class="nav-item" data-page="new-booking"><i class="fas fa-plus-circle"></i><span>New Booking</span></a><a class="nav-item" data-page="my-bookings"><i class="fas fa-clipboard-list"></i><span>My Bookings</span></a><a class="nav-item" data-page="catalogue"><i class="fas fa-th-large"></i><span>Catalogue</span></a><a class="nav-item" data-page="social-media"><i class="fas fa-images"></i><span>Social Media</span></a><a class="nav-item" data-page="chat"><i class="fas fa-comments"></i><span>Chat</span><span class="notif-dot hidden" id="chatDot"></span></a><a class="nav-item" data-page="profile"><i class="fas fa-user-circle"></i><span>Profile</span></a><div id="adminNav" class="hidden"><div class="nav-divider"></div><div class="nav-section-label" id="lblAdmin">Admin</div><a class="nav-item" data-page="all-bookings"><i class="fas fa-list-alt"></i><span>All Bookings</span><span class="notif-dot hidden" id="pendingDot"></span></a><a class="nav-item" data-page="manage-materials"><i class="fas fa-boxes"></i><span>Materials</span></a><a class="nav-item" data-page="manage-social"><i class="fas fa-cloud-upload-alt"></i><span>Social Content</span></a><a class="nav-item" data-page="reports"><i class="fas fa-chart-bar"></i><span>Reports</span></a></div></nav><div class="sidebar-footer"><div class="sync-indicator online" id="syncStatus"><span class="sync-dot"></span> <span id="syncLabel">Firebase Connected</span></div><div class="branch-badge"><i class="fas fa-building"></i><span id="sidebarBranch"></span></div><button class="btn-logout" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Sign Out</button></div></aside>
-<main class="main-content"><header class="topbar"><div class="topbar-left"><button class="sidebar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button><h2 class="page-title" id="pageTitle">Dashboard</h2></div><div class="topbar-right"><button class="notif-btn hidden" id="installBtn" title="Install App" style="background:linear-gradient(135deg,var(--accent-primary),#c85520);color:white;border:none;box-shadow:0 2px 8px rgba(232,103,42,0.4)"><i class="fas fa-download"></i></button><button class="lang-toggle-btn" id="langToggleApp">AF</button><button class="notif-btn" id="notifBtn"><i class="fas fa-bell"></i><span class="notif-count hidden" id="notifCount">0</span></button><button class="theme-toggle-btn" id="themeToggleApp"><i class="fas fa-moon"></i></button><div class="user-info"><div class="user-avatar" id="userAvatar">CH</div><span class="user-name" id="topbarBranch"></span></div></div></header>
+<div id="mainApp" class="main-app hidden"><div class="sidebar-overlay" id="sidebarOverlay"></div><aside class="sidebar" id="sidebar"><div class="sidebar-header"><div class="sidebar-logo" id="sidebarLogoArea"><i class="fas fa-hard-hat"></i><span>Coastal Hire</span></div><button class="sidebar-close" id="sidebarClose"><i class="fas fa-times"></i></button></div><nav class="sidebar-nav"><a class="nav-item active" data-page="dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-item" data-page="calendar"><i class="fas fa-calendar-alt"></i><span>Booking Calendar</span></a><a class="nav-item" data-page="new-booking"><i class="fas fa-plus-circle"></i><span>New Booking</span></a><a class="nav-item" data-page="my-bookings"><i class="fas fa-clipboard-list"></i><span>My Bookings</span></a><a class="nav-item" data-page="catalogue"><i class="fas fa-th-large"></i><span>Catalogue</span></a><a class="nav-item" data-page="social-media"><i class="fas fa-images"></i><span>Social Media</span></a><a class="nav-item" data-page="profile"><i class="fas fa-user-circle"></i><span>Profile</span></a><div id="adminNav" class="hidden"><div class="nav-divider"></div><div class="nav-section-label" id="lblAdmin">Admin</div><a class="nav-item" data-page="all-bookings"><i class="fas fa-list-alt"></i><span>All Bookings</span><span class="notif-dot hidden" id="pendingDot"></span></a><a class="nav-item" data-page="manage-materials"><i class="fas fa-boxes"></i><span>Materials</span></a><a class="nav-item" data-page="manage-social"><i class="fas fa-cloud-upload-alt"></i><span>Social Content</span></a><a class="nav-item" data-page="reports"><i class="fas fa-chart-bar"></i><span>Reports</span></a></div></nav><div class="sidebar-footer"><div class="sync-indicator online" id="syncStatus"><span class="sync-dot"></span> <span id="syncLabel">Firebase Connected</span></div><div class="branch-badge"><i class="fas fa-building"></i><span id="sidebarBranch"></span></div><button class="btn-logout" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Sign Out</button></div></aside>
+<main class="main-content"><header class="topbar"><div class="topbar-left"><button class="sidebar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button><h2 class="page-title" id="pageTitle">Dashboard</h2></div>
+<button class="notif-btn hidden" id="installBtn" title="Install App" style="background:var(--accent-primary-light);color:var(--accent-primary);border-color:var(--accent-primary)"><i class="fas fa-download"></i></button>
+<button class="notif-btn" id="notifBtn"><i class="fas fa-bell"></i><span class="notif-count hidden" id="notifCount">0</span></button>
+<div class="topbar-right"><button class="lang-toggle-btn" id="langToggleApp">AF</button><button class="notif-btn" id="notifBtn"><i class="fas fa-bell"></i><span class="notif-count hidden" id="notifCount">0</span></button><button class="theme-toggle-btn" id="themeToggleApp"><i class="fas fa-moon"></i></button><div class="user-info"><div class="user-avatar" id="userAvatar">CH</div><span class="user-name" id="topbarBranch"></span></div></div></header>
 <div class="page-content" id="pageContent">
 
 <div id="page-dashboard" class="page active"><div class="welcome-card"><h2 id="welcomeMsg"></h2><p id="welcomeSub"></p><button class="wc-btn" id="wcNewBtn" onclick="navigateTo('new-booking')"><i class="fas fa-plus"></i> New Booking</button></div><div class="stats-grid"><div class="stat-card stat-primary"><div class="stat-icon"><i class="fas fa-clock"></i></div><div class="stat-info-val"><h3 id="sPending">0</h3><p id="lblStatPending">Pending</p></div></div><div class="stat-card stat-success"><div class="stat-icon"><i class="fas fa-check-circle"></i></div><div class="stat-info-val"><h3 id="sApproved">0</h3><p id="lblStatApproved">Approved</p></div></div><div class="stat-card stat-warning"><div class="stat-icon"><i class="fas fa-truck"></i></div><div class="stat-info-val"><h3 id="sDispatched">0</h3><p id="lblStatDispatched">Dispatched</p></div></div><div class="stat-card stat-info"><div class="stat-icon"><i class="fas fa-history"></i></div><div class="stat-info-val"><h3 id="sTotal">0</h3><p id="lblStatTotal">Total</p></div></div></div>
@@ -237,58 +187,13 @@
 <div id="page-my-bookings" class="page"><button class="btn-back" onclick="navigateTo('dashboard')"><i class="fas fa-arrow-left"></i> Back</button><div class="card"><div class="card-header"><h3 id="hdrMyBk"><i class="fas fa-clipboard-list"></i> My Bookings</h3><div class="header-actions"><select class="filter-select" id="myStatusFilter" onchange="renderMyBookings()"><option value="all">All</option><option value="pending">Pending</option><option value="approved">Approved</option><option value="dispatched">Dispatched</option><option value="delivered">Delivered</option><option value="cancelled">Cancelled</option></select></div></div><div class="card-body"><div id="myBookingsList" class="table-wrapper"></div></div></div></div>
 <div id="page-catalogue" class="page"><button class="btn-back" onclick="navigateTo('dashboard')"><i class="fas fa-arrow-left"></i> Back</button><div class="card"><div class="card-header"><h3 id="hdrCat"><i class="fas fa-th-large"></i> Catalogue</h3></div><div class="card-body"><div id="catalogueGrid" class="cat-grid"></div></div></div></div>
 <div id="page-social-media" class="page"><button class="btn-back" onclick="navigateTo('dashboard')"><i class="fas fa-arrow-left"></i> Back</button><div class="card"><div class="card-header"><h3 id="hdrSM"><i class="fas fa-images"></i> Social Media</h3></div><div class="card-body"><div class="category-tabs" id="smTabs"><button class="cat-tab active" data-cat="all" onclick="filterSM('all')">All</button><button class="cat-tab" data-cat="Small Plant" onclick="filterSM('Small Plant')">Small Plant</button><button class="cat-tab" data-cat="Big Plant" onclick="filterSM('Big Plant')">Big Plant</button><button class="cat-tab" data-cat="DIY Tools" onclick="filterSM('DIY Tools')">DIY Tools</button></div><div id="smGrid" class="sm-grid"></div></div></div></div>
-<div id="page-chat" class="page">
-    <button class="btn-back" onclick="navigateTo('dashboard')"><i class="fas fa-arrow-left"></i> Back</button>
-    <div class="card chat-card">
-        <div class="card-header">
-            <h3 id="hdrChat"><i class="fas fa-comments"></i> Branch Chat</h3>
-            <div class="header-actions">
-                <span class="online-indicator"><span class="online-dot"></span> <span id="onlineCount">Live</span></span>
-            </div>
-        </div>
-        <div class="chat-messages" id="chatMessages"></div>
-        <div class="chat-input-area">
-            <textarea id="chatInput" placeholder="Type a message..." rows="1" onkeydown="handleChatKey(event)"></textarea>
-            <button class="chat-send-btn" onclick="sendChatMessage()">
-                <i class="fas fa-paper-plane"></i>
-            </button>
-        </div>
-    </div>
-</div>
 <div id="page-profile" class="page"><button class="btn-back" onclick="navigateTo('dashboard')"><i class="fas fa-arrow-left"></i> Back</button><div class="card"><div class="card-header"><h3 id="hdrProfile"><i class="fas fa-user-circle"></i> Profile</h3></div><div class="card-body"><div class="profile-header"><div class="profile-avatar" id="profileAvatar">CH</div><div class="profile-info"><h3 id="profileName"></h3><p id="profileId"></p><div id="profileBadge" class="profile-badge"></div></div></div><div class="section-title" id="lblSummary">Summary</div><div class="stats-grid" id="profileStats"></div></div></div></div>
 <div id="page-all-bookings" class="page"><button class="btn-back" onclick="navigateTo('dashboard')"><i class="fas fa-arrow-left"></i> Back</button><div class="card"><div class="card-header"><h3 id="hdrAllBk"><i class="fas fa-list-alt"></i> All Bookings</h3><div class="header-actions"><select class="filter-select" id="adminBranchFilter" onchange="renderAllBookings()"><option value="all">All Branches</option><option value="jeffreys_bay">Jeffreys Bay</option><option value="george">George</option><option value="port_elizabeth">Port Elizabeth</option><option value="witbank">Witbank</option><option value="middelburg">Middelburg</option><option value="ermelo">Ermelo</option><option value="lydenburg">Lydenburg</option><option value="groblersdal">Groblersdal</option><option value="nelspruit">Nelspruit</option></select><select class="filter-select" id="adminStatusFilter" onchange="renderAllBookings()"><option value="all">All</option><option value="pending">Pending</option><option value="approved">Approved</option><option value="dispatched">Dispatched</option><option value="delivered">Delivered</option><option value="cancelled">Cancelled</option></select></div></div><div class="card-body"><div id="allBookingsList" class="table-wrapper"></div></div></div></div>
 <div id="page-manage-materials" class="page"><button class="btn-back" onclick="navigateTo('dashboard')"><i class="fas fa-arrow-left"></i> Back</button><div class="card"><div class="card-header"><h3 id="hdrMgMat"><i class="fas fa-boxes"></i> Materials</h3><button class="btn btn-primary btn-sm" onclick="showAddMaterialModal()"><i class="fas fa-plus"></i> Add</button></div><div class="card-body"><div id="manageMaterialsList" class="table-wrapper"></div></div></div></div>
 <div id="page-manage-social" class="page"><button class="btn-back" onclick="navigateTo('dashboard')"><i class="fas fa-arrow-left"></i> Back</button><div class="card"><div class="card-header"><h3 id="hdrMgSm"><i class="fas fa-cloud-upload-alt"></i> Social Content</h3></div><div class="card-body"><div class="upload-zone" onclick="document.getElementById('fileInput').click()"><i class="fas fa-cloud-upload-alt"></i><p><span class="upload-label">Click to upload</span></p></div><input type="file" id="fileInput" accept="image/*" multiple style="display:none" onchange="handleFileUpload(event)"><div class="form-row" style="margin-bottom:18px"><div class="form-group"><label>Category</label><select id="uploadCategory"><option value="Small Plant">Small Plant</option><option value="Big Plant">Big Plant</option><option value="DIY Tools">DIY Tools</option></select></div><div class="form-group"><label>Title</label><input type="text" id="uploadTitle" placeholder="Poster name"></div></div><div id="manageSMList" class="table-wrapper"></div></div></div></div>
 <div id="page-reports" class="page"><button class="btn-back" onclick="navigateTo('dashboard')"><i class="fas fa-arrow-left"></i> Back</button><div class="card"><div class="card-header"><h3 id="hdrRpt"><i class="fas fa-chart-bar"></i> Reports</h3><div class="header-actions"><select class="filter-select" id="reportDays" onchange="renderReports()"><option value="7">7 Days</option><option value="30" selected>30 Days</option><option value="90">90 Days</option><option value="9999">All</option></select><button class="btn btn-secondary btn-sm" onclick="exportCSV()"><i class="fas fa-download"></i> CSV</button></div></div><div class="card-body" id="reportsBody"></div></div></div>
 
-</div>
-<nav class="bottom-nav" id="bottomNav">
-    <button class="bottom-nav-item" data-page="calendar">
-        <i class="fas fa-calendar-days"></i>
-        <span id="bnCalendar">Calendar</span>
-    </button>
-    <button class="bottom-nav-item" data-page="my-bookings">
-        <i class="fas fa-clipboard-check"></i>
-        <span id="bnMyBookings">Bookings</span>
-    </button>
-    <button class="bottom-nav-item" data-page="social-media">
-    <i class="fas fa-photo-film"></i>
-    <span id="bnSocial">Social</span>
-</button>
-<button class="bottom-nav-item" data-page="chat">
-    <i class="fas fa-comments"></i>
-    <span id="bnChat">Chat</span>
-</button>
-    <button class="bottom-nav-item" data-page="profile">
-        <i class="fas fa-circle-user"></i>
-        <span id="bnProfile">Profile</span>
-    </button>
-    <button class="bottom-nav-item" id="bnMoreBtn" onclick="openSidebar()">
-        <i class="fas fa-bars"></i>
-        <span id="bnMore">More</span>
-    </button>
-</nav>
-</main></div>
+</div></main></div>
 
 <div id="modal" class="modal hidden"><div class="modal-overlay" id="modalOverlay"></div><div class="modal-box"><div class="modal-head"><h3 id="modalTitle"></h3><button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button></div><div class="modal-body" id="modalBody"></div><div class="modal-foot" id="modalFoot"></div></div></div>
 <div class="toast-container" id="toastContainer"></div>
@@ -309,7 +214,7 @@ firebase.initializeApp({
     messagingSenderId:"782910526570",
     appId:"1:782910526570:web:b8c32fc15e5610f45a2613"
 });
-const db=firebase.database(),dbBk=db.ref('bookings'),dbMt=db.ref('materials'),dbSm=db.ref('social'),dbLogo=db.ref('logo'),dbChat=db.ref('chat');
+const db=firebase.database(),dbBk=db.ref('bookings'),dbMt=db.ref('materials'),dbSm=db.ref('social'),dbLogo=db.ref('logo');
 
 const TR={
 en:{dashboard:'Dashboard',calendar:'Booking Calendar',newBooking:'New Booking',myBookings:'My Bookings',catalogue:'Catalogue',socialMedia:'Social Media',profile:'Profile',allBookings:'All Bookings',materials:'Materials',socialContent:'Social Content',reports:'Reports',signIn:'Sign In',signOut:'Sign Out',branch:'Branch',password:'Password',selectBranch:'Select your branch...',enterPw:'Enter password',bookItem:'Book Item',bookNow:'Book Now',close:'Close',cancel:'Cancel',yes:'Yes',no:'No',back:'Back',noBookings:'No bookings',noData:'No data',pending:'Pending',approved:'Approved',dispatched:'Dispatched',delivered:'Delivered',total:'Total',stock:'Stock',available:'available',fullyBooked:'Fully Booked',welcome_m:'Good morning',welcome_a:'Good afternoon',welcome_e:'Good evening',orderDate:'Order Date',requiredDate:'Required Date',selectReqDate:'Select Required Date',chooseItem:'Choose Item to Book',selectItem:'Select an item to book:',bookingFor:'Booking for',noBookingsDate:'No bookings on this date',dateAvailable:'available for booking',pastDate:'Past Date',recentBookings:'Recent Bookings',viewAll:'View All',popularMats:'Popular Materials',quickActions:'Quick Actions',contact:'Contact',contactPerson:'Contact Person *',phone:'Phone',selItems:'Selected Items',notes:'Notes',reset:'Reset',submit:'Submit',createBooking:'Create New Booking',summary:'Summary',admin:'Admin',hasBookings:'Has Bookings',pickDate:'Please select a date',cancelled:'Cancelled',addMore:'Add More Items'},
@@ -357,7 +262,7 @@ function applyLang(){
         document.getElementById('btnSignIn').innerHTML='<i class="fas fa-sign-in-alt"></i> '+T('signIn');
         document.getElementById('optSelectBranch').textContent=T('selectBranch');
         document.getElementById('loginPassword').placeholder=T('enterPw');
-        var navMap={'dashboard':T('dashboard'),'calendar':T('calendar'),'new-booking':T('newBooking'),'my-bookings':T('myBookings'),'catalogue':T('catalogue'),'social-media':T('socialMedia'),'profile':T('profile'),'all-bookings':T('allBookings'),'manage-materials':T('materials'),'manage-social':T('socialContent'),'reports':T('reports'),'chat':currentLang==='af'?'Klets':'Chat'};
+        var navMap={'dashboard':T('dashboard'),'calendar':T('calendar'),'new-booking':T('newBooking'),'my-bookings':T('myBookings'),'catalogue':T('catalogue'),'social-media':T('socialMedia'),'profile':T('profile'),'all-bookings':T('allBookings'),'manage-materials':T('materials'),'manage-social':T('socialContent'),'reports':T('reports')};
         document.querySelectorAll('.nav-item[data-page]').forEach(function(el){var s=el.querySelector('span');if(s&&navMap[el.dataset.page])s.textContent=navMap[el.dataset.page]});
         document.getElementById('lblAdmin').textContent=T('admin');
         document.getElementById('logoutBtn').innerHTML='<i class="fas fa-sign-out-alt"></i> '+T('signOut');
@@ -388,12 +293,6 @@ function applyLang(){
         document.getElementById('hdrCat').innerHTML='<i class="fas fa-th-large"></i> '+T('catalogue');
         document.getElementById('hdrSM').innerHTML='<i class="fas fa-images"></i> '+T('socialMedia');
         document.getElementById('hdrProfile').innerHTML='<i class="fas fa-user-circle"></i> '+T('profile');
-        var hdrCh=document.getElementById('hdrChat');
-if(hdrCh)hdrCh.innerHTML='<i class="fas fa-comments"></i> '+(currentLang==='af'?'Tak Klets':'Branch Chat');
-var ci=document.getElementById('chatInput');
-if(ci)ci.placeholder=currentLang==='af'?'Tik \'n boodskap...':'Type a message...';
-var oc=document.getElementById('onlineCount');
-if(oc)oc.textContent=currentLang==='af'?'Aanlyn':'Live';
         document.getElementById('hdrAllBk').innerHTML='<i class="fas fa-list-alt"></i> '+T('allBookings');
         document.getElementById('hdrMgMat').innerHTML='<i class="fas fa-boxes"></i> '+T('materials');
         document.getElementById('hdrMgSm').innerHTML='<i class="fas fa-cloud-upload-alt"></i> '+T('socialContent');
@@ -401,6 +300,7 @@ if(oc)oc.textContent=currentLang==='af'?'Aanlyn':'Live';
         document.getElementById('lblSummary').textContent=T('summary');
         var legLabels=[T('pending'),T('approved'),T('dispatched'),T('delivered'),T('cancelled'),T('hasBookings')];
         document.querySelectorAll('#calLegend .cal-legend-item').forEach(function(el,i){if(legLabels[i]){var dot=el.querySelector('.cal-legend-dot');if(dot)el.innerHTML=dot.outerHTML+legLabels[i]}});
+        // Recent bookings date filter
         var opts={
             'optRDAll':{en:'All Time',af:'Alle Tyd'},
             'optRDToday':{en:'Today',af:'Vandag'},
@@ -409,15 +309,6 @@ if(oc)oc.textContent=currentLang==='af'?'Aanlyn':'Live';
             'optRD90':{en:'Last 90 Days',af:'Laaste 90 Dae'}
         };
         Object.keys(opts).forEach(function(id){var el=document.getElementById(id);if(el)el.textContent=opts[id][L]});
-        var bn={
-    'bnCalendar':currentLang==='af'?'Kalender':'Calendar',
-    'bnMyBookings':currentLang==='af'?'Besprekings':'Bookings',
-    'bnSocial':currentLang==='af'?'Sosiaal':'Social',
-    'bnChat':currentLang==='af'?'Klets':'Chat',
-    'bnProfile':currentLang==='af'?'Profiel':'Profile',
-    'bnMore':currentLang==='af'?'Meer':'More'
-};
-        Object.keys(bn).forEach(function(id){var el=document.getElementById(id);if(el)el.textContent=bn[id]});
     }catch(e){console.log('applyLang error:',e)}
 }
 
@@ -446,16 +337,15 @@ function toggleLang(){currentLang=currentLang==='en'?'af':'en';localStorage.setI
 function tryLogin(id,pw){var b=BRANCHES[id];if(!b||b.pw!==pw)return{ok:false};currentUser={id:id,name:b.name,init:b.init,admin:b.admin,phone:b.phone};localStorage.setItem('ch_user',JSON.stringify(currentUser));return{ok:true}}
 function logout(){currentUser=null;localStorage.removeItem('ch_user');showLoginScreen();toast(currentLang==='af'?'Uitgeteken.':'Signed out.','info')}
 function showLoginScreen(){document.getElementById('loginScreen').classList.remove('hidden');document.getElementById('mainApp').classList.add('hidden')}
-function showApp(){document.getElementById('loginScreen').classList.add('hidden');document.getElementById('mainApp').classList.remove('hidden');document.getElementById('sidebarBranch').textContent=currentUser.name;document.getElementById('topbarBranch').textContent=currentUser.name;document.getElementById('userAvatar').textContent=currentUser.init;currentUser.admin?document.getElementById('adminNav').classList.remove('hidden'):document.getElementById('adminNav').classList.add('hidden');renderLogo();applyLang();initChat();navigateTo('dashboard')}
+function showApp(){document.getElementById('loginScreen').classList.add('hidden');document.getElementById('mainApp').classList.remove('hidden');document.getElementById('sidebarBranch').textContent=currentUser.name;document.getElementById('topbarBranch').textContent=currentUser.name;document.getElementById('userAvatar').textContent=currentUser.init;currentUser.admin?document.getElementById('adminNav').classList.remove('hidden'):document.getElementById('adminNav').classList.add('hidden');renderLogo();applyLang();navigateTo('dashboard')}
 function getToday(){var n=new Date();return n.getFullYear()+'-'+String(n.getMonth()+1).padStart(2,'0')+'-'+String(n.getDate()).padStart(2,'0')}
 
 function navigateTo(p){
     if(['all-bookings','manage-materials','manage-social','reports'].indexOf(p)!==-1&&!currentUser.admin)return;
     currentPage=p;
-    var tm={'dashboard':T('dashboard'),'calendar':T('calendar'),'new-booking':T('newBooking'),'my-bookings':T('myBookings'),'catalogue':T('catalogue'),'social-media':T('socialMedia'),'profile':T('profile'),'all-bookings':T('allBookings'),'manage-materials':T('materials'),'manage-social':T('socialContent'),'reports':T('reports'),'chat':currentLang==='af'?'Tak Klets':'Branch Chat'};
+    var tm={'dashboard':T('dashboard'),'calendar':T('calendar'),'new-booking':T('newBooking'),'my-bookings':T('myBookings'),'catalogue':T('catalogue'),'social-media':T('socialMedia'),'profile':T('profile'),'all-bookings':T('allBookings'),'manage-materials':T('materials'),'manage-social':T('socialContent'),'reports':T('reports')};
     document.getElementById('pageTitle').textContent=tm[p]||p;
     document.querySelectorAll('.nav-item').forEach(function(el){el.classList.toggle('active',el.dataset.page===p)});
-    document.querySelectorAll('.bottom-nav-item').forEach(function(el){el.classList.toggle('active',el.dataset.page===p)});
     document.querySelectorAll('.page').forEach(function(el){el.classList.toggle('active',el.id==='page-'+p)});
     closeSidebar();
     document.getElementById('pageContent').scrollTop=0;
@@ -474,10 +364,11 @@ function navigateTo(p){
         window.scrollTo(0,0);
     },200);
 }
-function renderPage(p){switch(p){case'dashboard':renderDashboard();break;case'calendar':renderCalendar();break;case'new-booking':initBookingForm();break;case'my-bookings':renderMyBookings();break;case'catalogue':renderCatalogue();break;case'social-media':renderSocialMedia();break;case'profile':renderProfile();break;case'all-bookings':renderAllBookings();break;case'manage-materials':renderManageMaterials();break;case'manage-social':renderManageSocial();break;case'reports':renderReports();break;case'chat':renderChat();markChatAsRead();break}}
+function renderPage(p){switch(p){case'dashboard':renderDashboard();break;case'calendar':renderCalendar();break;case'new-booking':initBookingForm();break;case'my-bookings':renderMyBookings();break;case'catalogue':renderCatalogue();break;case'social-media':renderSocialMedia();break;case'profile':renderProfile();break;case'all-bookings':renderAllBookings();break;case'manage-materials':renderManageMaterials();break;case'manage-social':renderManageSocial();break;case'reports':renderReports();break}}
 function openSidebar(){document.getElementById('sidebar').classList.add('open');document.getElementById('sidebarOverlay').classList.add('show')}
 function closeSidebar(){document.getElementById('sidebar').classList.remove('open');document.getElementById('sidebarOverlay').classList.remove('show')}
 
+/* ===== MAIN CALENDAR ===== */
 function initCal(){var n=new Date();calYear=n.getFullYear();calMonth=n.getMonth()}
 function changeMonth(d){calMonth+=d;if(calMonth>11){calMonth=0;calYear++}if(calMonth<0){calMonth=11;calYear--}renderCalendar()}
 function calToday(){initCal();renderCalendar()}
@@ -540,6 +431,7 @@ function showItemPicker(dateStr){
 
 function pickItem(matId,dateStr){closeModal();pendingCalDate=dateStr;selectedMats={};navigateTo('new-booking');setTimeout(function(){addMaterialById(matId);miniCalSelectedDate=dateStr;document.getElementById('bkDate').value=dateStr;updateSelectedDateDisplay();renderMiniCal()},150)}
 
+/* ===== DASHBOARD ===== */
 function renderDashboard(){
     var bks=currentUser.admin?LB():LB().filter(function(b){return b.branchId===currentUser.id});
     var hr=new Date().getHours();
@@ -549,6 +441,7 @@ function renderDashboard(){
     document.getElementById('sPending').textContent=p;document.getElementById('sApproved').textContent=bks.filter(function(b){return b.status==='approved'}).length;document.getElementById('sDispatched').textContent=bks.filter(function(b){return b.status==='dispatched'}).length;document.getElementById('sTotal').textContent=bks.length;
     if(currentUser.admin&&p>0){document.getElementById('notifCount').textContent=p;document.getElementById('notifCount').classList.remove('hidden');var pd=document.getElementById('pendingDot');if(pd)pd.classList.remove('hidden')}else{document.getElementById('notifCount').classList.add('hidden');var pd=document.getElementById('pendingDot');if(pd)pd.classList.add('hidden')}
 
+    // Apply date filter to recent bookings
     var dateFilter=document.getElementById('recentDateFilter');
     var filterVal=dateFilter?dateFilter.value:'all';
     var filteredBks=bks;
@@ -571,6 +464,7 @@ function renderDashboard(){
     document.getElementById('popularMats').innerHTML=!srt.length?'<div class="empty-state sm"><i class="fas fa-box-open"></i><p>'+T('noData')+'</p></div>':srt.map(function(x,i){return'<div class="popular-item"><span class="popular-rank">'+(i+1)+'</span><span class="popular-name">'+esc(x[0])+'</span><span class="popular-count">'+x[1]+'</span></div>'}).join('');
 }
 
+/* ===== MINI CALENDAR (in booking form) ===== */
 function initMiniCal(){
     var n=new Date();
     if(miniCalSelectedDate){var d=new Date(miniCalSelectedDate+'T12:00:00');miniCalYear=d.getFullYear();miniCalMonth=d.getMonth()}
@@ -638,6 +532,7 @@ function updateSelectedDateDisplay(){
     }
 }
 
+/* ===== BOOKING FORM ===== */
 function initBookingForm(){
     if(!pendingCalDate)selectedMats={};
     selCounter=0;
@@ -688,6 +583,7 @@ function submitBooking(e){
     dbBk.child(bk.id).set(bk).then(function(){toast((currentLang==='af'?'Bespreking ':'Booking ')+bk.id+(currentLang==='af'?' ingedien!':' submitted!'),'success');selectedMats={};selCounter=0;pendingCalDate=null;miniCalSelectedDate=null;navigateTo('my-bookings')}).catch(function(err){toast('Error: '+err.message,'error')});
 }
 
+/* ===== TABLES ===== */
 function renderMyBookings(){var sf=document.getElementById('myStatusFilter').value;var bks=LB().filter(function(b){return b.branchId===currentUser.id});if(sf!=='all')bks=bks.filter(function(b){return b.status===sf});var el=document.getElementById('myBookingsList');if(!bks.length){el.innerHTML='<div class="empty-state"><i class="fas fa-inbox"></i><h3>'+T('noBookings')+'</h3><button class="btn btn-primary" onclick="navigateTo(\'new-booking\')"><i class="fas fa-plus"></i> '+T('newBooking')+'</button></div>';return}el.innerHTML=bldTbl(bks,false)}
 function renderAllBookings(){var bf=document.getElementById('adminBranchFilter').value,sf=document.getElementById('adminStatusFilter').value;var bks=LB();if(bf!=='all')bks=bks.filter(function(b){return b.branchId===bf});if(sf!=='all')bks=bks.filter(function(b){return b.status===sf});document.getElementById('allBookingsList').innerHTML=!bks.length?'<div class="empty-state"><i class="fas fa-inbox"></i><h3>'+T('noBookings')+'</h3></div>':bldTbl(bks,true)}
 
@@ -711,13 +607,14 @@ function viewBooking(id){
     openModal(currentLang==='af'?'Bespreking Besonderhede':'Booking Details',body,foot);
 }
 
+/* ===== CATALOGUE ===== */
 function renderCatalogue(){document.getElementById('catalogueGrid').innerHTML=LM().map(function(m){return'<div class="cat-card"><div class="cat-icon"><i class="'+m.icon+'"></i></div><div class="cat-name">'+esc(m.name)+'</div><div class="cat-desc">'+esc(m.desc)+'</div><div class="cat-tags">'+(m.hasSize?'<span class="cat-tag badge-dispatched">S/M/L</span>':'')+(m.hasDesc?'<span class="cat-tag badge-pending">Custom</span>':'')+'</div><button class="cat-book-btn" onclick="bookFromCatalogue(\''+m.id+'\')"><i class="fas fa-shopping-cart"></i> '+T('bookNow')+'</button></div>'}).join('')}
 
+/* ===== SOCIAL MEDIA ===== */
 function filterSM(c){currentSMFilter=c;document.querySelectorAll('#smTabs .cat-tab').forEach(function(t){t.classList.toggle('active',t.dataset.cat===c)});renderSocialMedia()}
 function renderSocialMedia(){var items=LSM();if(currentSMFilter!=='all')items=items.filter(function(i){return i.category===currentSMFilter});document.getElementById('smGrid').innerHTML=!items.length?'<div class="empty-state" style="grid-column:1/-1"><i class="fas fa-images"></i><h3>'+T('noData')+'</h3></div>':items.map(function(i){return'<div class="sm-card"><div class="sm-preview">'+(i.thumbnail?'<img src="'+i.thumbnail+'">':'<i class="fas fa-image"></i>')+'</div><div class="sm-info"><div class="sm-title">'+esc(i.title)+'</div><div class="sm-cat-label">'+esc(i.category)+'</div><div class="sm-actions">'+(i.thumbnail?'<button class="sm-btn sm-btn-download" onclick="dlSM(\''+i.id+'\')"><i class="fas fa-download"></i></button>':'')+'<button class="sm-btn sm-btn-preview" onclick="pvSM(\''+i.id+'\')"><i class="fas fa-eye"></i></button></div></div></div>'}).join('')}
 function pvSM(id){var i=LSM().find(function(x){return x.id===id});if(!i)return;openModal(i.title,'<div style="text-align:center">'+(i.thumbnail?'<img src="'+i.thumbnail+'" style="max-width:100%;border-radius:var(--radius-md)">':'No preview')+'</div>',(i.thumbnail?'<button class="btn btn-primary" onclick="dlSM(\''+i.id+'\')"><i class="fas fa-download"></i></button>':'')+'<button class="btn btn-secondary" onclick="closeModal()">'+T('close')+'</button>')}
 function dlSM(id){var i=LSM().find(function(x){return x.id===id});if(!i||!i.thumbnail)return;var a=document.createElement('a');a.href=i.thumbnail;a.download=(i.title||'poster').replace(/[^a-z0-9]/gi,'_')+'.png';a.click();toast('Downloading...','success')}
-
 function handleFileUpload(e){
     var files=e.target.files;
     if(!files.length)return;
@@ -761,6 +658,8 @@ function compressImage(file,callback){
             var maxHeight=1200;
             var width=img.width;
             var height=img.height;
+
+            // Calculate new dimensions maintaining aspect ratio
             if(width>height){
                 if(width>maxWidth){
                     height=Math.round(height*maxWidth/width);
@@ -772,121 +671,33 @@ function compressImage(file,callback){
                     height=maxHeight;
                 }
             }
+
             canvas.width=width;
             canvas.height=height;
             var ctx=canvas.getContext('2d');
             ctx.drawImage(img,0,0,width,height);
+
+            // Convert to JPEG with 80% quality (smaller file size)
             var compressedDataUrl=canvas.toDataURL('image/jpeg',0.8);
             callback(compressedDataUrl);
         };
-        img.onerror=function(){toast('Image error: '+file.name,'error')};
+        img.onerror=function(){
+            toast('Image error: '+file.name,'error');
+        };
         img.src=e.target.result;
     };
-    reader.onerror=function(){toast('Read error: '+file.name,'error')};
+    reader.onerror=function(){
+        toast('Read error: '+file.name,'error');
+    };
     reader.readAsDataURL(file);
 }
-
 function renderManageSocial(){var items=LSM(),el=document.getElementById('manageSMList');el.innerHTML=!items.length?'<div class="empty-state sm"><p>'+T('noData')+'</p></div>':'<table class="data-table"><thead><tr><th></th><th>Title</th><th>Category</th><th></th></tr></thead><tbody>'+items.map(function(i){return'<tr><td><div style="width:40px;height:40px;border-radius:4px;overflow:hidden;background:var(--bg-primary)">'+(i.thumbnail?'<img src="'+i.thumbnail+'" style="width:100%;height:100%;object-fit:cover">':'')+'</div></td><td class="bold">'+esc(i.title)+'</td><td>'+esc(i.category)+'</td><td><button class="tbl-btn tbl-delete" onclick="delSM(\''+i.id+'\')"><i class="fas fa-trash"></i></button></td></tr>'}).join('')+'</tbody></table>'}
 function delSM(id){var items=LSM().filter(function(i){return i.id!==id});dbSm.set(items).then(function(){toast(currentLang==='af'?'Verwyder.':'Deleted.','success')})}
-/* ===== CHAT ===== */
-var chatMessages=[];
-var lastReadChatTime=parseInt(localStorage.getItem('ch_lastReadChat')||'0');
-var chatListenerAttached=false;
 
-function initChat(){
-    if(chatListenerAttached)return;
-    chatListenerAttached=true;
-    dbChat.limitToLast(100).on('value',function(snap){
-        var data=snap.val();
-        chatMessages=data?Object.keys(data).map(function(k){return Object.assign({key:k},data[k])}).sort(function(a,b){return a.time-b.time}):[];
-        if(currentPage==='chat'){
-            renderChat();
-            markChatAsRead();
-        }else{
-            updateChatBadge();
-        }
-    });
-}
-
-function renderChat(){
-    var el=document.getElementById('chatMessages');
-    if(!el)return;
-    if(!chatMessages.length){
-        el.innerHTML='<div class="chat-empty"><i class="fas fa-comments"></i><p>'+(currentLang==='af'?'Nog geen boodskappe nie. Begin die gesprek!':'No messages yet. Start the conversation!')+'</p></div>';
-        return;
-    }
-    var html='';
-    var lastDate='';
-    chatMessages.forEach(function(m){
-        var msgDate=new Date(m.time);
-        var dateStr=msgDate.toLocaleDateString('en-ZA',{day:'2-digit',month:'short',year:'numeric'});
-        if(dateStr!==lastDate){
-            html+='<div class="chat-date-divider">'+dateStr+'</div>';
-            lastDate=dateStr;
-        }
-        var isOwn=m.branchId===currentUser.id;
-        var timeStr=msgDate.toLocaleTimeString('en-ZA',{hour:'2-digit',minute:'2-digit'});
-        html+='<div class="chat-msg '+(isOwn?'own':'other')+'">';
-        if(!isOwn)html+='<div class="chat-msg-sender">'+esc(m.branchName)+'</div>';
-        html+='<div class="chat-msg-text">'+esc(m.text)+'</div>';
-        html+='<div class="chat-msg-time">'+timeStr+'</div>';
-        html+='</div>';
-    });
-    el.innerHTML=html;
-    // Auto-scroll to bottom
-    setTimeout(function(){el.scrollTop=el.scrollHeight},50);
-    markChatAsRead();
-}
-
-function sendChatMessage(){
-    var input=document.getElementById('chatInput');
-    var text=input.value.trim();
-    if(!text)return;
-    if(text.length>500){toast(currentLang==='af'?'Boodskap te lank':'Message too long','warning');return}
-    var msg={
-        branchId:currentUser.id,
-        branchName:currentUser.name,
-        text:text,
-        time:Date.now()
-    };
-    dbChat.push(msg).then(function(){
-        input.value='';
-        input.style.height='40px';
-    }).catch(function(err){
-        toast('Send failed: '+err.message,'error');
-    });
-}
-
-function handleChatKey(e){
-    // Auto-resize textarea
-    var ta=e.target;
-    setTimeout(function(){
-        ta.style.height='40px';
-        ta.style.height=Math.min(ta.scrollHeight,120)+'px';
-    },0);
-    // Send on Enter (but Shift+Enter for new line)
-    if(e.key==='Enter'&&!e.shiftKey){
-        e.preventDefault();
-        sendChatMessage();
-    }
-}
-
-function markChatAsRead(){
-    lastReadChatTime=Date.now();
-    localStorage.setItem('ch_lastReadChat',lastReadChatTime);
-    updateChatBadge();
-}
-
-function updateChatBadge(){
-    var unread=chatMessages.filter(function(m){return m.time>lastReadChatTime&&m.branchId!==currentUser.id}).length;
-    var dot=document.getElementById('chatDot');
-    if(dot){
-        if(unread>0)dot.classList.remove('hidden');
-        else dot.classList.add('hidden');
-    }
-}
+/* ===== PROFILE ===== */
 function renderProfile(){document.getElementById('profileAvatar').textContent=currentUser.init;document.getElementById('profileName').textContent=currentUser.name;document.getElementById('profileId').textContent=currentUser.phone||currentUser.id;document.getElementById('profileBadge').innerHTML=currentUser.admin?'<i class="fas fa-crown"></i> Admin':'<i class="fas fa-building"></i> '+T('branch');var bks=LB().filter(function(b){return b.branchId===currentUser.id});document.getElementById('profileStats').innerHTML=[{l:T('total'),v:bks.length,c:'stat-primary',i:'fas fa-clipboard-list'},{l:T('pending'),v:bks.filter(function(b){return b.status==='pending'}).length,c:'stat-warning',i:'fas fa-clock'},{l:T('delivered'),v:bks.filter(function(b){return b.status==='delivered'}).length,c:'stat-success',i:'fas fa-box-open'}].map(function(s){return'<div class="stat-card '+s.c+'"><div class="stat-icon"><i class="'+s.i+'"></i></div><div class="stat-info-val"><h3>'+s.v+'</h3><p>'+s.l+'</p></div></div>'}).join('')}
 
+/* ===== MANAGE MATERIALS ===== */
 function renderManageMaterials(){document.getElementById('manageMaterialsList').innerHTML='<table class="data-table"><thead><tr><th>Name</th><th>'+T('stock')+'</th><th>Options</th><th>Actions</th></tr></thead><tbody>'+LM().map(function(m){return'<tr><td class="bold">'+esc(m.name)+'</td><td>'+m.stock+'</td><td style="font-size:.75rem">'+(m.hasSize?'<span class="badge badge-dispatched">Sizes</span> ':'')+(m.hasDesc?'<span class="badge badge-pending">Custom</span>':'')+'</td><td><div class="table-actions"><button class="tbl-btn tbl-approve" onclick="editMat(\''+m.id+'\')"><i class="fas fa-edit"></i></button><button class="tbl-btn tbl-delete" onclick="delMatC(\''+m.id+'\',\''+esc(m.name)+'\')"><i class="fas fa-trash"></i></button></div></td></tr>'}).join('')+'</tbody></table>'}
 function showAddMaterialModal(){openModal(currentLang==='af'?'Voeg Materiaal By':'Add Material','<div class="form-group"><label>Name *</label><input type="text" id="nName"></div><div class="form-group"><label>Category</label><select id="nCat"><option>Print</option><option>Signage</option><option>Promotional</option><option>Events</option></select></div><div class="form-group"><label>Icon</label><input type="text" id="nIcon" value="fas fa-box"></div><div class="form-group"><label>Description</label><textarea id="nDesc" rows="2"></textarea></div><div class="form-group"><label>'+T('stock')+'</label><input type="number" id="nStock" value="100" min="0"></div><div class="form-group"><label><input type="checkbox" id="nHasSize" style="width:auto;margin-right:6px"> Size Options (S/M/L)</label></div><div class="form-group"><label><input type="checkbox" id="nHasDesc" style="width:auto;margin-right:6px"> Custom Size/Description</label></div>','<button class="btn btn-secondary" onclick="closeModal()">'+T('cancel')+'</button><button class="btn btn-primary" onclick="addMat()"><i class="fas fa-plus"></i></button>')}
 function addMat(){var n=document.getElementById('nName').value.trim();if(!n){toast('Name required.','warning');return}var mats=LM().slice();mats.push({id:'m'+Date.now(),name:n,cat:document.getElementById('nCat').value,icon:document.getElementById('nIcon').value.trim()||'fas fa-box',desc:document.getElementById('nDesc').value.trim(),stock:parseInt(document.getElementById('nStock').value)||0,hasQty:true,hasSize:document.getElementById('nHasSize').checked,hasDesc:document.getElementById('nHasDesc').checked});dbMt.set(mats).then(function(){closeModal();toast(currentLang==='af'?'Bygevoeg!':'Added!','success')})}
@@ -895,6 +706,7 @@ function saveMat(id){var mats=LM().slice();var i=mats.findIndex(function(m){retu
 function delMatC(id,n){openModal(currentLang==='af'?'Verwyder':'Delete','<p style="font-size:.92rem;color:var(--text-secondary)">'+(currentLang==='af'?'Verwyder':'Delete')+' "'+n+'"?</p>','<button class="btn btn-secondary" onclick="closeModal()">'+T('no')+'</button><button class="btn btn-danger" onclick="delMat(\''+id+'\')">'+T('yes')+'</button>')}
 function delMat(id){var mats=LM().filter(function(m){return m.id!==id});dbMt.set(mats).then(function(){closeModal();toast(currentLang==='af'?'Verwyder.':'Deleted.','success')})}
 
+/* ===== REPORTS ===== */
 function renderReports(){var days=parseInt(document.getElementById('reportDays').value)||30,co=new Date();co.setDate(co.getDate()-days);var all=LB(),bks=days>=9000?all:all.filter(function(b){return new Date(b.createdAt)>=co});var brC={};bks.forEach(function(b){brC[b.branchName]=(brC[b.branchName]||0)+1});var mxB=Math.max.apply(null,Object.values(brC).concat([1]));var mC={};bks.forEach(function(b){b.items.forEach(function(i){mC[i.name]=(mC[i.name]||0)+i.qty})});var tM=Object.entries(mC).sort(function(a,b){return b[1]-a[1]}).slice(0,10),mxM=tM.length?tM[0][1]:1;document.getElementById('reportsBody').innerHTML='<div class="stats-grid" style="margin-bottom:20px"><div class="stat-card stat-primary"><div class="stat-icon"><i class="fas fa-clipboard-list"></i></div><div class="stat-info-val"><h3>'+bks.length+'</h3><p>'+(currentLang==='af'?'Besprekings':'Bookings')+'</p></div></div><div class="stat-card stat-success"><div class="stat-icon"><i class="fas fa-building"></i></div><div class="stat-info-val"><h3>'+Object.keys(brC).length+'</h3><p>'+(currentLang==='af'?'Takke':'Branches')+'</p></div></div><div class="stat-card stat-warning"><div class="stat-icon"><i class="fas fa-boxes"></i></div><div class="stat-info-val"><h3>'+bks.reduce(function(s,b){return s+b.totalQty},0)+'</h3><p>Items</p></div></div></div><div class="report-section"><h4><i class="fas fa-circle-notch"></i> Status</h4><div class="status-summary">'+['pending','approved','dispatched','delivered','cancelled'].map(function(s){return'<div class="status-box"><div class="snum">'+bks.filter(function(b){return b.status===s}).length+'</div><span class="badge badge-'+s+'">'+s+'</span></div>'}).join('')+'</div></div><div class="report-section"><h4><i class="fas fa-building"></i> '+(currentLang==='af'?'Per Tak':'By Branch')+'</h4>'+(Object.entries(brC).sort(function(a,b){return b[1]-a[1]}).map(function(x){return'<div class="report-bar"><span class="rbar-label">'+esc(x[0])+'</span><div class="rbar-track"><div class="rbar-fill" style="width:'+(x[1]/mxB*100)+'%">'+x[1]+'</div></div></div>'}).join('')||'<p style="color:var(--text-tertiary)">'+T('noData')+'</p>')+'</div><div class="report-section"><h4><i class="fas fa-fire"></i> '+(currentLang==='af'?'Top Materiaal':'Top Materials')+'</h4>'+(tM.map(function(x){return'<div class="report-bar"><span class="rbar-label">'+esc(x[0])+'</span><div class="rbar-track"><div class="rbar-fill" style="width:'+(x[1]/mxM*100)+'%">'+x[1]+'</div></div></div>'}).join('')||'<p style="color:var(--text-tertiary)">'+T('noData')+'</p>')+'</div>'}
 function exportCSV(){var bks=LB();if(!bks.length){toast(T('noData'),'warning');return}var h=['ID','Branch','Contact','Phone','Items','Qty','Order Date','Required Date','Status'];var r=bks.map(function(b){return[b.id,b.branchName,b.contact,b.phone||'',b.items.map(function(i){return i.name+(i.size?'('+i.size+')':'')+(i.customDesc?'-'+i.customDesc:'')+'x'+i.qty}).join('|'),b.totalQty,fmtDate(b.createdAt),fmtDate(b.date),b.status]});var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([[h].concat(r).map(function(x){return x.join(',')}).join('\n')],{type:'text/csv'}));a.download='bookings_'+getToday()+'.csv';a.click();toast(currentLang==='af'?'Uitgevoer!':'Exported!','success')}
 
@@ -919,7 +731,6 @@ document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('langToggleLogin').addEventListener('click',toggleLang);
     document.getElementById('langToggleApp').addEventListener('click',toggleLang);
     document.querySelectorAll('.nav-item[data-page]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();navigateTo(el.dataset.page)})});
-    document.querySelectorAll('.bottom-nav-item[data-page]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();navigateTo(el.dataset.page)})});
     document.getElementById('sidebarToggle').addEventListener('click',openSidebar);
     document.getElementById('sidebarClose').addEventListener('click',closeSidebar);
     document.getElementById('sidebarOverlay').addEventListener('click',closeSidebar);
@@ -931,67 +742,43 @@ document.addEventListener('DOMContentLoaded',function(){
     document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
 });
 
-// PWA Install Prompt
+// PWA Install Prompt Handler
 var deferredPrompt = null;
 
 window.addEventListener('beforeinstallprompt', function(e) {
     e.preventDefault();
     deferredPrompt = e;
-    console.log('Install prompt captured!');
-
-    // Show install buttons
-    var btn1 = document.getElementById('installBtn');
-    var btn2 = document.getElementById('installBtnLogin');
-
-    if (btn1) {
-        btn1.classList.remove('hidden');
-        btn1.onclick = triggerInstall;
-    }
-    if (btn2) {
-        btn2.classList.remove('hidden');
-        btn2.onclick = triggerInstall;
+    var btn = document.getElementById('installBtn');
+    if (btn) {
+        btn.classList.remove('hidden');
+        btn.onclick = function() {
+            if (!deferredPrompt) return;
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then(function(choice) {
+                if (choice.outcome === 'accepted') {
+                    toast('App installed successfully!', 'success');
+                } else {
+                    toast('Install cancelled', 'info');
+                }
+                deferredPrompt = null;
+                btn.classList.add('hidden');
+            });
+        };
     }
 });
-
-function triggerInstall() {
-    if (!deferredPrompt) {
-        toast('App is already installed or install not available', 'info');
-        return;
-    }
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then(function(choice) {
-        if (choice.outcome === 'accepted') {
-            toast('App installed successfully!', 'success');
-        } else {
-            toast('Install cancelled', 'info');
-        }
-        deferredPrompt = null;
-        var btn1 = document.getElementById('installBtn');
-        var btn2 = document.getElementById('installBtnLogin');
-        if (btn1) btn1.classList.add('hidden');
-        if (btn2) btn2.classList.add('hidden');
-    });
-}
 
 window.addEventListener('appinstalled', function() {
     toast('Coastal Hire installed!', 'success');
-    var btn1 = document.getElementById('installBtn');
-    var btn2 = document.getElementById('installBtnLogin');
-    if (btn1) btn1.classList.add('hidden');
-    if (btn2) btn2.classList.add('hidden');
+    var btn = document.getElementById('installBtn');
+    if (btn) btn.classList.add('hidden');
 });
 
-// Detect if running as installed app
-if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) {
-    console.log('Running as installed PWA - hiding install buttons');
-    setTimeout(function() {
-        var btn1 = document.getElementById('installBtn');
-        var btn2 = document.getElementById('installBtnLogin');
-        if (btn1) btn1.classList.add('hidden');
-        if (btn2) btn2.classList.add('hidden');
-    }, 500);
-}
-    
+// Check if already installed
+window.addEventListener('load', function() {
+    if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) {
+        console.log('App running as installed PWA');
+    }
+});
 if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(reg){reg.unregister()})});setTimeout(function(){navigator.serviceWorker.register('sw.js').then(function(reg){console.log('SW:',reg.scope)}).catch(function(err){console.log('SW err:',err)})},1000)})}
 </script>
 </body>
